@@ -1,0 +1,20 @@
+.panle {
+	&__card {
+		width: 100%;
+		padding: 16px;
+		background-color: #fff;
+		border-radius: 0.5rem;
+        margin-bottom: 24px;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__text {
+		font-size: 42px;
+		margin-bottom: 0;
+		color: #425166;
+	}
+}

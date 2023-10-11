@@ -1,0 +1,20 @@
+@use 'sass:map';
+// @import 'functions';
+// @import 'variables';
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);
+
+@mixin media-breakpoint-up($media) {
+	$media_value: map.get($grid-breakpoints, $media);
+
+	@media (min-width: $media_value) {
+		@content;
+	}
+}

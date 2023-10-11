@@ -1,0 +1,44 @@
+html,
+body {
+	background-color: #fafafa;
+}
+
+body {
+	font-family: 'Cairo', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+button {
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.main__content {
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	margin: 0;
+
+	@media (min-width: 976px) {
+		// margin-inline-start: 76.8px;
+	}
+}
+
+.content__wrapper {
+	// @apply pb-[52px] p-5 md:pb-[52px]  md:p-7;
+
+	padding-bottom: 52px;
+	padding: 20px;
+
+	@include media-breakpoint-up(md) {
+		padding-bottom: 52px;
+		padding: 28px;
+	}
+}
