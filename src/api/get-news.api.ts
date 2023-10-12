@@ -10,7 +10,7 @@ export const getNews = async (body: Props) => {
 	const params = createQueryString(body);
 	try {
 		const res = await axios.get(
-			`https://newsapi.org/v2/everything?&sortBy=publishedAt&apiKey=${
+			`https://newsapi.org/v2/everything?&sortBy=popularity&apiKey=${
 				import.meta.env.VITE_API_URL
 			}&${params}`
 		);
