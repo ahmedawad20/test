@@ -4,6 +4,7 @@ import { getNews } from '../api';
 interface Props {
 	page: number;
 	pageSize: number;
+	q: string;
 }
 
 export const useGetNews = (body: Props) => {
